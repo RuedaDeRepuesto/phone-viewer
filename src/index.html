@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phone View</title>
+  <body>
+    <div class="controls">
+      <button id="back"><span class="material-icons-outlined">chevron_left</span></button>
+      <input id="url" class="url" type="text" value="http://localhost:8100">
+      <button id="refresh"><span class="material-icons-outlined">refresh</span></button>
+      <button id="tools"><span class="material-icons-outlined">code</span></button>
+      <button id="close"><span class="material-icons-outlined">close</span></button>
+    </div>
+    <div class="phone-container">
+      <div class="notch"></div>
+      <div class="status-bar">
+        <div class="left">
+          <p id="hour">00:00</p>
+        </div>
+        <div class="center">
+
+        </div>
+        <div class="right">
+          <span class="material-icons-outlined">signal_cellular_alt</span>
+          <span class="material-icons-outlined">wifi</span>
+          <span class="material-icons-outlined">battery_charging_full</span>
+        </div>
+      </div>
+      <div class="phone-screen">
+        <webview class="webview"  src="http://localhost:8100" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) BC3 iOS/3.12.7 (build 538; iPhone 14 Pro; iOS 17.4.0)"></webview>
+      </div>
+    </div>
+
+
+  </body>
+</html>
